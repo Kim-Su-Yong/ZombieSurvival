@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 6bc76eedb6629574a83870562bc0c4ee
 ModelImporter:
-  serializedVersion: 24
+  serializedVersion: 20300
   internalIDToNameTable:
   - first:
       1: 100000
@@ -343,7 +343,7 @@ ModelImporter:
       name: Texture
     second: {fileID: 2100000, guid: d484612fe758741428a5f2f4cd4a9109, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -366,7 +366,9 @@ ModelImporter:
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
-    extraExposedTransformPaths: []
+    extraExposedTransformPaths:
+    - Zombie/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+    - Zombie/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
@@ -1031,15 +1033,18 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -1049,10 +1054,11 @@ ModelImporter:
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.002
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1061,10 +1067,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human:
     - boneName: Hips
       humanName: Hips
@@ -1362,8 +1368,7 @@ ModelImporter:
     - name: Spine1
       parentName: Spine
       position: {x: 2.2351744e-11, y: 0.0009080037, z: 2.6077035e-11}
-      rotation: {x: -0.000000014901161, y: 1.5404575e-10, z: -0.0000000037221042,
-        w: 1}
+      rotation: {x: -0.000000014901161, y: 1.5404575e-10, z: -0.0000000037221042, w: 1}
       scale: {x: 0.9999999, y: 0.99999934, z: 0.9999998}
     - name: Spine2
       parentName: Spine1
@@ -1553,8 +1558,7 @@ ModelImporter:
     - name: LeftToe_End
       parentName: LeftToeBase
       position: {x: 8.265488e-11, y: 0.00060854503, z: -3.7252905e-12}
-      rotation: {x: 0.000000059604645, y: -0.00000006353366, z: -0.000000061478204,
-        w: 1}
+      rotation: {x: 0.000000059604645, y: -0.00000006353366, z: -0.000000061478204, w: 1}
       scale: {x: 1.0000011, y: 1.0000004, z: 1.0000005}
     - name: LeftToe_End_end
       parentName: LeftToe_End
@@ -1603,13 +1607,18 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.2
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
